@@ -31,11 +31,13 @@ GO
 ```
 
 # Exercise 3
+```sql
 UPDATE courses
 SET course_status = 'published',course_published_dt = GETDATE()
 WHERE course_status = 'draft' AND (course_name LIKE '%Python%' OR course_name LIKE '%Scala%');
-
+```
 # Exercise 4
+```sql
 DELETE FROM courses
 WHERE course_status NOT IN ('published','draft');
-
+```
